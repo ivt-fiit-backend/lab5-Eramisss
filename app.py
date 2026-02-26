@@ -60,7 +60,7 @@ def laureats_list():
 # TODO: Добавить код для получения лауреата по индексу
 
 
-@app.route("/api/v2/laureat/<id>/")
+@app.route("/api/v2/laureats/<int:id>/")
 def laureats_object(id):
     if 0 <= id < len(laureats):
         return jsonify(laureats[id])
